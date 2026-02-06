@@ -54,23 +54,18 @@ This will:
 
 Access the server in your browser:
 
-http://localhost:[your port]
-
-(Port may vary based on configuration.)
-
+http://localhost: [yourport]
 
 PROJECT STRUCTURE
 
 websitemaker_python/
 │
-├── websitemaker.py        Main entry point / orchestration
-├── server.py              HTTP server implementation
-├── terminal_ui.py         CLI interaction
-├── makeanindex.py         Index generation
-├── assets.py              Asset utilities
-├── settings.py            Configuration handling
-├── last_settings.txt      Persisted runtime settings
-└── README.txt
+├── websitemaker.py         Main entry point / orchestration
+├── html_generator.py       Makes index, Css, and Js
+├── server.py               HTTP server implementation
+├── terminal_ui.py          Color implementation
+├── settings.py             Configuration handling
+└── README.md               Read me
 
 
 CONFIGURATION
