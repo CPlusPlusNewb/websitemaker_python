@@ -54,7 +54,7 @@ This will:
 
 Access the server in your browser:
 
-http://localhost:8000
+http://localhost:[your port]
 
 (Port may vary based on configuration.)
 
