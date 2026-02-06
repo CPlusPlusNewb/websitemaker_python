@@ -1,6 +1,4 @@
-"""
-Terminal UI utilities - colored output and formatting
-"""
+#Terminal UI utilities - colored output and formatting
 import subprocess
 import sys
 import os
@@ -39,7 +37,6 @@ def bigline_seperator():
     print(colorama.Style.RESET_ALL, end="")
 
 def error(problem, text2, color, blink):
-    """fancy terminal messages"""
     fiximports()
     import colorama
     import termcolor
@@ -53,7 +50,6 @@ def error(problem, text2, color, blink):
     print(text2)
 
 def error_2(problem, text2, color, blink):
-    """fancy terminal messages with bookends"""
     fiximports()
     import colorama
     import termcolor
@@ -67,4 +63,4 @@ def error_2(problem, text2, color, blink):
     print(text2, end=" ")
     print(text1, end="\n")
 
-cmd = lambda x: os.system('cls' if os.name == 'nt' else 'clear') if x == 'clear' else os.system(x)
+cmd = lambda x: os.system('cls' if os.name == 'nt' else 'clear') if x == 'clear' else os.system(x) #very clean clear for all cmd/bash types

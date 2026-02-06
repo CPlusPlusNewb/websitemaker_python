@@ -1,12 +1,8 @@
-"""
-HTML generator - creates the portfolio viewer page
-"""
+#HTML generator - creates the portfolio viewer page
 import os
 import json
 
-def make_index_html(base_dir="."):
-    """creates a single standalone portfolio page"""
-    
+def make_index_html(base_dir="."):    
     # scan for project folders
     folders = {}
     for f in os.listdir(base_dir):
@@ -357,7 +353,6 @@ async function openFile(folder, file) {{
   const modal = document.getElementById('modal');
   modal.style.display = 'flex';
   
-  // trigger animation after display is set
   setTimeout(() => {{
     modal.classList.add('show');
   }}, 10);
@@ -416,10 +411,8 @@ function closeModal() {{
   const modal = document.getElementById('modal');
   const content = modal.querySelector('.modal-content');
   
-  // remove show class to trigger exit animation
   modal.classList.remove('show');
   
-  // wait for animation to complete, then hide
   setTimeout(() => {{
     modal.style.display = 'none';
   }}, 300);
